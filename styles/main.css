@@ -14,7 +14,6 @@ body{
   border: 2px solid #800;
 }
 
-/* HEADER */
 header{
   background: linear-gradient(90deg,#fff 0%, #f4cfa0 60%, #fff 100%);
   padding: 12px 16px;
@@ -29,7 +28,6 @@ header .logo{
 header .titles h1{ font-size:22px; margin-top:4px; }
 header .titles h2{ font-size:16px; margin-top:6px; color:var(--accent); font-style:italic; }
 
-/* NAVBAR */
 .navbar { background: var(--accent); border-bottom: 2px solid #800; }
 .menu{
   display:flex;
@@ -58,7 +56,6 @@ header .titles h2{ font-size:16px; margin-top:6px; color:var(--accent); font-sty
   color:var(--dark);
 }
 
-/* SUBMENU */
 .has-sub small{ margin-left:6px; }
 .submenu{
   display:none;
@@ -77,7 +74,6 @@ header .titles h2{ font-size:16px; margin-top:6px; color:var(--accent); font-sty
 .menu > li:first-child a{ margin-left:0; }
 .menu > li:last-child a{ margin-right:0; }
 
-/* MAIN LAYOUT */
 main{ display:flex; gap:20px; padding:18px; }
 aside{ width: 30%; padding-right:12px; border-right:1px solid #ddd; }
 section{ width:70%; padding-left:12px; }
@@ -91,7 +87,6 @@ section{ width:70%; padding-left:12px; }
   border-radius:8px;
 }
 
-/* FEATURED IMAGE */
 .featured{
   display:block;
   width:180px;
@@ -103,11 +98,9 @@ section{ width:70%; padding-left:12px; }
   border-radius:6px;
 }
 
-/* TEXT */
 h2{ color:var(--dark); margin-bottom:8px; }
 h3{ margin-top:10px; margin-bottom:4px; font-size:16px; color:#222; }
 
-/* QUOTE */
 blockquote{
   font-style:italic;
   margin:10px 0;
@@ -115,7 +108,6 @@ blockquote{
   border-left:3px solid #800;
 }
 
-/* FOOTER */
 footer{
   background:#600;
   color:#fff;
@@ -134,3 +126,4 @@ footer{
   header .logo{ width:60px; }
   .featured{ float:none; margin:10px auto; display:block; max-width:60%; }
 }
+
