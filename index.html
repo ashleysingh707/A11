@@ -15,15 +15,36 @@
   </div>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Speakers</a></li>
+<nav class="navbar">
+  <ul class="menu">
+
+    <li><a class="current">Home</a></li>
+
+    <li class="has-sub">
+      <a href="#">Speakers <small>&#9662;</small></a>
+      <ul class="submenu">
+        <li><a href="#">David Brancaccio</a></li>
+        <li><a href="#">Andrew Ross Sorkin</a></li>
+        <li><a href="#">Scott Sampson</a></li>
+        <li><a href="#">Jane Goodall</a></li>
+      </ul>
+    </li>
+
     <li><a href="#">Luncheons</a></li>
     <li><a href="#">Tickets</a></li>
-    <li><a href="#">About Us</a></li>
+
+    <li class="has-sub">
+      <a href="#">About Us <small>&#9662;</small></a>
+      <ul class="submenu">
+        <li><a href="#">History</a></li>
+        <li><a href="#">Board Members</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </li>
+
   </ul>
 </nav>
+
 
 <main>
 
@@ -77,3 +98,4 @@
 
 </body>
 </html>
+
