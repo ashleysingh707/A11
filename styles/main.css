@@ -14,28 +14,26 @@ body{
   border: 2px solid #800;
 }
 
-/* ===== Header ===== */
 header{
   background: linear-gradient(90deg,#fff 0%, #f4cfa0 60%, #fff 100%);
   padding: 12px 16px;
   overflow: auto;
   border-bottom: 2px solid #800;
-  text-align: center; /* mobile-first */
+  text-align: center; 
 }
 header .logo{
-  display: none; /* hide logo on mobile */
+  display: none; 
 }
 header .titles h1{ font-size:22px; margin-top:4px; }
 header .titles h2{ font-size:16px; margin-top:6px; color:var(--accent); font-style:italic; }
 
-/* ===== Navbar ===== */
 .navbar { background: var(--accent); border-bottom: 2px solid #800; position: relative; }
 .menu{
   list-style:none;
   margin:0;
   padding:0;
   flex-direction: column;
-  display: none; /* hidden by default for mobile menu */
+  display: none; 
   position: absolute;
   left: 0;
   background: var(--accent);
@@ -72,13 +70,11 @@ header .titles h2{ font-size:16px; margin-top:6px; color:var(--accent); font-sty
 .has-sub:hover > .submenu { display:block; } 
 .submenu li a{ padding:10px 8px; margin:0 2px 2px; display:block; color:var(--light); }
 
-/* Mobile submenu arrows */
 .submenu li.has-sub > a::after {
-  content: "\25B6"; /* right-pointing arrow */
+  content: "\25B6"; 
   margin-left: 6px;
 }
 
-/* Hamburger button */
 .menu-btn {
   display: block;
   cursor: pointer;
@@ -87,22 +83,21 @@ header .titles h2{ font-size:16px; margin-top:6px; color:var(--accent); font-sty
   padding: 12px;
 }
 .menu-btn::after {
-  content: "\2630"; /* hamburger icon */
+  content: "\2630"; 
 }
 #menu-toggle {
   display: none;
 }
 #menu-toggle:checked + .menu-btn::after {
-  content: "\2715"; /* X when checked */
+  content: "\2715"; 
 }
 #menu-toggle:checked ~ .menu {
   display: flex;
 }
 
-/* ===== Main ===== */
 main{
   display: flex;
-  flex-direction: column-reverse; /* section first on mobile */
+  flex-direction: column-reverse; 
   gap: 20px;
   padding: 18px;
 }
@@ -111,7 +106,7 @@ aside, section{
   padding: 8px 12px;
   border-right: none;
 }
-section { border-bottom: 2px solid #800; } /* mobile-only bottom border */
+section { border-bottom: 2px solid #800; } 
 
 .thumb{
   display:block;
@@ -125,7 +120,7 @@ section { border-bottom: 2px solid #800; } /* mobile-only bottom border */
 .featured{
   display:block;
   width:180px;
-  max-width:60%; /* mobile max width */
+  max-width:60%; 
   height:auto;
   float:none;
   margin:10px auto;
@@ -151,9 +146,7 @@ footer{
   margin-top:18px;
 }
 
-/* ===== Large screens ===== */
 @media (min-width: 801px){
-  /* Header */
   header{
     text-align: left;
   }
@@ -164,7 +157,6 @@ footer{
     margin-right: 12px;
   }
 
-  /* Main layout */
   main{
     flex-direction: row;
   }
@@ -184,7 +176,6 @@ footer{
     max-width:35%;
   }
 
-  /* Navbar menu */
   .menu{
     display: flex !important;
     flex-direction: row;
@@ -193,6 +184,6 @@ footer{
   }
   .menu-btn { display: none; }
 
-  /* Submenu arrows */
-  .submenu li.has-sub > a::after { content: "\25BC"; } /* down arrow */
+  .submenu li.has-sub > a::after { content: "\25BC"; } 
 }
+
