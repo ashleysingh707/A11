@@ -105,3 +105,91 @@ footer {
   padding: 10px 0;
   margin-top: 20px;
 }
+
+:root {
+  --menu-light: #fff;
+  --menu-mid: antiquewhite;
+  --menu-dark: #553333;
+  --accent: #664444;
+}
+
+.navbar {
+  background-color: var(--accent);
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu > li {
+  flex-basis: 20%;
+  text-align: center;
+  position: relative; 
+}
+
+.menu a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: var(--menu-light);
+  margin: 0 1px 2px;
+}
+
+
+.menu a:hover,
+.menu a:focus,
+.menu a.current {
+  background-color: var(--menu-mid);
+  color: var(--menu-dark);
+}
+
+
+.has-sub small {
+  margin-left: 5px;
+}
+
+
+.submenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: var(--accent);
+  display: none; 
+  z-index: 1000;
+}
+
+.has-sub:hover > .submenu {
+  display: block;
+}
+
+.submenu li a {
+  margin: 0 2px 2px;
+  padding: 0.75em;
+  display: block;
+}
+
+
+.menu > li:first-child a { margin-left: 0; }
+.menu > li:last-child a { margin-right: 0; }
+
+
+@media (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu > li {
+    flex-basis: 100%;
+  }
+
+  .submenu {
+    position: static;  
+  }
+}
