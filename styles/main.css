@@ -1,93 +1,107 @@
-/* custom property */
-:root {
-	--accent-color: #800000;  /* could also be coded #800 */
-	--gradient-color: #f6bb73;
-}
-
-/* reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* default styles */
 body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-	width: 80%;
-	margin: auto;
-	border: 2px solid var(--accent-color);
-}
-a:hover, a:focus{
-	font-style: italic;
-	color: var(--accent-color);
-}
-h1, h2, h3, p, ul {
-	padding: .5em 0;
-}
-h1 {
-	font-size: 150%;
-}
-h2 {
-	font-size: 130%;
-	color: var(--accent-color);
-}
-h3 {
-	font-size: 105%;
-}
-ul {
-	margin-left: 2em;
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #800000;
 }
 
-/* the styles for the header */
 header {
-	border-bottom: 2px solid var(--accent-color);
-	background-image: linear-gradient(
-	    30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
-	& h2 {
-		font-size: 175%;
-		padding: .5em 0 0 0;
-	}
-	& h3 {
-		font-size: 130%;
-		font-style: italic;
-		padding-bottom: 1em;
-	}
-	& img {
-		float: left;
-		margin: .75em 1em;
-	}
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #f2d59b, #ffffff, #f2d59b);
+  padding: 10px;
 }
 
-/* the styles for the main content */
+.logo {
+  width: 80px;
+  margin-right: 15px;
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.title-block h2 {
+  margin: 0;
+  font-style: italic;
+  font-size: 18px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #664444;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #553333;
+}
+
 main {
-	padding: 0 1em 1em;
-	& h1 {
-		border-top: 2px solid var(--accent-color);
-		border-bottom: 2px solid var(--accent-color);
-	}
-	& blockquote {
-		font-style: italic;
-		padding-left: 1em;
-	}
-	& img {
-		border: 4px double var(--accent-color);
-		border-radius: 10px;
-	}
+  display: flex;
+  padding: 15px;
 }
 
-/* the styles for the footer */
+aside {
+  width: 30%;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+
+aside h2 {
+  margin-top: 0;
+}
+
+.month {
+  font-weight: bold;
+}
+
+aside img {
+  width: 90px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 3px double #800000;
+}
+
+section {
+  width: 70%;
+  padding-left: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 10px;
+  border-left: 3px solid #800000;
+}
+
+.featured {
+  width: 180px;
+  float: right;
+  margin-left: 10px;
+  border: 3px double #800000;
+}
+
 footer {
-	background-color: var(--accent-color);
-	& p {
-		text-align: center;
-		color: white;
-		padding: 1em 0;
-	}
-}
-
-/* CSS class */
-.large {
-	font-size: 125%;
+  background-color: #800000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
